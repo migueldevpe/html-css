@@ -1,0 +1,184 @@
+body{
+    background-image: linear-gradient(to bottom,  rgb(40, 40, 40),  rgb(20, 20, 20));
+    height: 922px;
+}
+
+h1{
+    font-family: "Gidole", sans-serif;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.text{
+    font-family: "Gidole", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.text:hover{
+    font-family: "Gidole", sans-serif;
+    font-size: 16.2px;
+    color: rgb(190, 190, 190);
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+p{
+    font-family: "Gidole", sans-serif;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.bordervideo{
+    border-radius: 1cap;
+    border-style: outset;
+    border-color: white;
+    border-width: 5px;
+}
+
+.bordervideo:hover{
+    border-radius: 1cap;
+    border-style: outset;
+    border-color: rgb(190, 190, 190);
+    border-width: 6px;
+}
+
+.pic1{
+    filter: brightness(.45);
+}
+
+.pic1:hover{
+    filter: brightness(.80);
+}
+
+picture{
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.click{
+    font-family: "Gidole", sans-serif;
+    max-width: 48px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
+}
+
+.click:hover{
+    font-family: "Gidole", sans-serif;
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    filter: brightness(.60);
+}
+
+.anim1{
+    font-family: "Gidole", sans-serif;
+    max-width: 320px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: groove;
+    border-color: white;
+    border-width: 2.5px;
+    filter: brightness(.40);
+}
+
+.anim1:hover{
+    font-family: "Gidole", sans-serif;
+    max-width: 310px;
+    max-height: 175px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: outset;
+    border-color: rgb(190, 190, 190);
+    border-width: 5px;
+    filter: brightness();
+}
+
+.anim2{
+    font-family: "Gidole", sans-serif;
+    max-width: 320px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: groove;
+    border-color: white;
+    border-width: 2.5px;
+    filter: brightness(.40);
+}
+
+.anim2:hover{
+    font-family: "Gidole", sans-serif;
+    max-width: 310px;
+    max-height: 175px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: outset;
+    border-color: rgb(190, 190, 190);
+    border-width: 5px;
+    filter: brightness();
+}
+
+.anim3{
+    font-family: "Gidole", sans-serif;
+    max-width: 320px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: groove;
+    border-color: white;
+    border-width: 2.5px;
+    filter: brightness(.40);
+}
+
+.anim3:hover{
+    font-family: "Gidole", sans-serif;
+    max-width: 310px;
+    max-height: 175px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: outset;
+    border-color: rgb(190, 190, 190);
+    border-width: 5px;
+    filter: brightness();
+}
+
+.anim4{
+    font-family: "Gidole", sans-serif;
+    max-width: 320px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: groove;
+    border-color: white;
+    border-width: 2.5px;
+    filter: brightness(.40);
+}
+
+.anim4:hover{
+    font-family: "Gidole", sans-serif;
+    max-width: 310px;
+    max-height: 175px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5cap;
+    border-style: outset;
+    border-color: rgb(190, 190, 190);
+    border-width: 5px;
+    filter: brightness();
+}

@@ -1,0 +1,396 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "BioSansELFont";
+    src: url(files/BioSansExtraLight.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BioSansREFont";
+    src: url(files/BioSansRegular.otf);
+    font-weight: normal;
+}
+
+* {
+    user-select: none;
+}
+
+:root {
+    --corfundo: rgb(255, 250, 240);
+    --fonteespecial: BioSansELFont;
+    --fontepadrao: BioSansREFont;
+}
+
+@media (max-width: 1150px) and (min-width: 320px){
+    body header {
+        backdrop-filter: blur(1px);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, transparent 90%);
+        height: 79px;
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    body header > nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    body main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        height: 750px;
+        margin: 0px auto;
+        padding: 0px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    body main > .menphoto {
+        z-index: 1;
+        position: fixed;
+        left: 51%;
+        transform: translateX(-50%);
+        margin: auto;
+        top: 90px;
+    }
+    
+    body main .menphoto > .miguel {
+        width: 690px;
+    }
+    
+    body main .maintextcenter {
+        display: inline-flex;
+        font-family: var(--fontepadrao);
+        position: fixed;
+        top: 550px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        background-color: transparent;
+        width: 365px;
+        height: 175px;
+        margin: 0px;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    
+    .maintextcenter > .textcircle1 {
+        font-size: 50px;
+        position: absolute;
+        top: 6px;
+        left: 7px;
+        margin: 0px;
+    }
+    
+    .maintextcenter > .textcircle2  {
+        font-size: 150px;
+        position: absolute;
+        left: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    main > .circle {
+        position: fixed;
+        background-image: linear-gradient(to bottom, rgb(230, 185, 55), rgb(255, 230, 0));
+        border-radius: 50%;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2),
+        inset 1px 1px 15px rgba(255, 255, 255, 1);
+        width: 700px;
+        height: 700px;
+    }
+    
+    body footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    body footer > .footerp  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 360px;
+        height: 70px;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--corfundo);
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, transparent 90%);
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 79px;
+    width: 100%;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav > h2 {
+    font-family: var(--fonteespecial);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 25px 25px;
+    transition: 0.5s;
+}
+
+nav > h2:hover {
+    text-shadow: 1px 1px 20px rgba(245, 225, 95, 0.4);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+nav > h2:active {
+    text-shadow: 1px 1px 20px rgba(245, 225, 95, 0.3);
+    font-size: (1.05);
+    transition: 0.5s;
+}
+
+h2 > #headnav {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 750px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+main > .menphoto {
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    top: 90px;
+}
+
+.menphoto > .miguel {
+    width: 690px;
+}
+
+.maintextcenter {
+    display: inline-flex;
+    font-family: var(--fontepadrao);
+    position: fixed;
+    left: 51.5vw;
+    transform: translateX(50%);
+    z-index: 1;
+    background-color: transparent;
+    width: 365px;
+    height: 175px;
+    margin: 0px;
+    text-shadow: 2px 2px 1px var(--corfundo);
+}
+
+.maintextcenter > .textcircle1 {
+    font-size: 50px;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    margin: 0px;
+}
+
+.maintextcenter > .textcircle2  {
+    font-size: 150px;
+    position: absolute;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+main > .circle {
+    position: fixed;
+    background-image: linear-gradient(to bottom, rgb(230, 185, 55), rgb(255, 230, 0));
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2),
+    inset 1px 1px 15px rgba(255, 255, 255, 1);
+    width: 700px;
+    height: 700px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+}
+
+footer > .footerp  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 360px;
+    height: 70px;
+}
+
+.footerp > .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+.instagram > .footerlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlink > .instaicon {
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+}
+
+.instagram:hover {
+    background-color: rgb(210, 55, 125);
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footerp > .github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+.github > .footerlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlink > .giticon {
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+}
+
+.github:hover {
+    background-color: rgb(45, 50, 60);
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footerp > .linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+.linkedin > .footerlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlink > .linkedinicon {
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+}
+
+.linkedin:hover {
+    background-color: rgb(10, 102, 194);
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footerp > .footernone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+.footernone > .footerlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlink > .noneicon {
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+
+}
+
+.footernone:hover {
+    background-color: rgb(170, 170, 170);
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+}

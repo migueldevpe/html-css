@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "BioSansELFont";
+    src: url(files/BioSansExtraLight.otf);
+}
+
+@font-face {
+    font-family: "BioSansREFont";
+    src: url(files/BioSansRegular.otf);
+}
+
+:root {
+    --corfundo: rgb(255, 250, 240);
+}
+
+* {
+    user-select: none;
+}
+
+@media (max-width: 950px) {
+    body footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    body footer > .footerp  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 360px;
+        height: 70px;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--corfundo);
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, transparent 90%);
+    position: sticky;
+    top: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 79px;
+    width: 100%;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav > h2 {
+    font-family: "BioSansELFont";
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 25px 25px;
+    transition: 0.5s;
+}
+
+nav > h2:hover {
+    text-shadow: 1px 1px 20px rgba(245, 225, 95, 0.4);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+nav > h2:active {
+    text-shadow: 1px 1px 20px rgba(245, 225, 95, 0.3);
+    font-size: (1.05);
+    transition: 0.5s;
+}
+
+h2 > #headnav {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: block;
+    background-color: transparent;
+    width: 75%;
+    margin: auto;
+}
+
+.principal {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+    left: 50%;
+}
+
+.card {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(245, 245, 245);
+    height: 250px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.card > img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0px 0px 0px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card > h1 {
+    font-size: 1.5em;
+    margin: 5px 0px 5px 10px;
+}
+
+.card > p {
+    text-align: justify;
+    font-size: 1em;
+    margin: 0px 15px 15px 15px;
+}

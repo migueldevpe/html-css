@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "BioSansELFont";
+    src: url(files/BioSansExtraLight.otf);
+}
+
+@font-face {
+    font-family: "BioSansREFont";
+    src: url(files/BioSansRegular.otf);
+}
+
+:root {
+    --corfundo: rgb(255, 250, 240);
+    --fonteespecial: BioSansELFont;
+    --fontepadrao: BioSansREFont;
+}
+
+* {
+    user-select: none;
+}
+
+@media (max-width: 1250px) and (min-width: 320px) {
+    body main {
+        max-width: 1200px;
+        min-width: 320px;
+        margin: 0px auto;
+        width: 95%;
+    }
+    
+    body main > p {
+        font-size: 1em;
+        margin: 0px auto;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.background1 {
+    background-image: url(files/testando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.background2 {
+    background-image: linear-gradient(45deg, rgb(230, 185, 55), rgb(255, 230, 0));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-indent: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+}
+
+iframe {
+    aspect-ratio: auto 16 / 9;
+    background-color: transparent;
+    height: 100%;
+    margin: 25px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, transparent 90%);
+    position: sticky;
+    top: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 79px;
+    width: 100%;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav > h2 {
+    font-family: "BioSansELFont";
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5),
+    1px 1px 1px var(--corfundo);
+    padding: 0px;
+    margin: 25px 25px;
+    transition: 0.5s;
+}
+
+nav > h2:hover {
+    text-shadow: 1px 1px 20px rgba(245, 225, 95, 0.4);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+nav > h2:active {
+    text-shadow: 1px 1px 20px rgba(245, 225, 95, 0.3);
+    font-size: (1.05);
+    transition: 0.5s;
+}
+
+h2 > #headnav {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 1250px;
+    margin: auto;
+}
+
+main h1 {
+    font-family: var(--fontepadrao);
+    margin: 0px 0px 25px 0px;
+    text-align: center;
+}
+
+main p {
+    font-family: var(--fontepadrao);
+    font-size: 1.5em;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    text-align: justify;
+    line-height: 1em;
+}

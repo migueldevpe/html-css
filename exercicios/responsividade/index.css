@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+* {
+}
+
+:root {
+    --corpadrao: rgb(240, 240, 240);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.cabeca {
+    background-color: var(--corpadrao);
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+}
+
+.cabeca > h1 {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.cabeca > p {
+    text-align: center;
+    margin: 15px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.boxnav {
+    background-color: var(--corpadrao);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid gray;
+    z-index: 1;
+}
+
+.boxnav > .tnav {
+    display: flex;
+    font-size: 1.3em;
+    margin: 0px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.boxnav > .tnav:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+.boxnav > #menu {
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    border: none;
+    margin: 0px auto;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.boxnav #menu > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+
+.boxnav > #menu:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.boxnav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    background-color: var(--corpadrao);
+    height: 100dvh;
+    width: 900px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.braco {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    width: 350px;
+    border-left: 2px solid gray;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 140;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.peinterativo > button {
+    border: none;
+}
+
+.backtop {
+    background-color: black;
+    position: fixed;
+    padding: 0px;
+    bottom: 15px;
+    left: 15px;
+    height: 40px;
+    width: 40px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+a > .backtop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+a .backtop > .backicon {
+    height: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.backtop:hover {
+    background-color: white;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.backicon:hover {
+    filter: brightness(0);
+    transition: 0.3s ease-in-out;
+}
+
+.contact {
+    background-color: black;
+    position: fixed;
+    padding: 0px;
+    bottom: 15px;
+    right: 15px;
+    height: 70px;
+    width: 70px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+a > .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+a .contact > .whatsapp {
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+
+.contact:hover {
+    background-color: #11C146;
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+.pe {
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+    box-shadow: -1px -1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pe p {
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
+
+strong{
+    color: black;
+}
