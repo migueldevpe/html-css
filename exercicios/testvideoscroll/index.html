@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vídeo controlado pelo Scroll</title>
+<style>
+  body, html {
+    margin: 0; padding: 0; height: 300vh; /* bastante scroll */
+    background: #000;
+  }
+  video {
+    position: fixed;
+    top: 10px; left: 10px;
+    width: 600px;
+    border: 3px solid white;
+    background: black;
+  }
+</style>
+</head>
+<body>
+
+<video id="video" muted playsinline preload="auto" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"></video>
+
+<script>
+  const video = document.getElementById('video');
+
+  let targetTime = 0;
+  let currentTime = 0;
+
+  function updateTargetTime() {
+    const scrollTop = window.scrollY || window.pageYOffset;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = scrollTop / scrollHeight;
+    targetTime = scrollPercent * video.duration;
+  }
+
+  function smoothUpdate() {
+    currentTime += (targetTime - currentTime) * 0.1; // suaviza movimento
+    if (!isNaN(currentTime)) {
+      video.currentTime = currentTime;
+    }
+    requestAnimationFrame(smoothUpdate);
+  }
+
+  video.addEventListener('loadedmetadata', () => {
+    updateTargetTime();
+    smoothUpdate();
+    window.addEventListener('scroll', updateTargetTime);
+  });
+</script>
+
+</body>
+</html>

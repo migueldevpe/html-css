@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0px 0px;
+}
+
+header p {
+    color: white;    
+    text-align: center;
+    margin: auto;
+    padding: 0px 0px 30px 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.normal {
+    padding: 10vh 0px 10vh 50px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.normal p {
+    font-size: 3vw;
+    line-height: 2em;
+}
+
+.image {
+    padding: 30vh 0px 30vh 0px;
+}
+
+.image p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 50px;
+    margin: 0px;
+    width: 40%;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    font-size: 3vw;
+    line-height: 2em;
+}
+
+#image1 {
+    background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+#image2 {
+    background-image: url(https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pspace {
+    margin-bottom: 10vh;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px;
+}

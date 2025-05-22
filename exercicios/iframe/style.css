@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#celular {
+    background-image: url(pacote-d013/imagens/frame-iphone.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudo {
+    position: absolute;
+    width: 86%;
+    height: 76%; 
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.linkhome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.homecelular {
+    border-radius: 50%;
+    opacity: 0%;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.homecelular:hover {
+    opacity: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 7.5px;
+    margin-bottom: 20px;
+}
+
+.redes {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 320px;
+    top: 76px;
+    left: 25px;
+    z-index: 99999;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.rede {
+    height: auto;
+    width: 50px;
+    border-radius: 25%;
+    box-sizing: border-box;
+    border: 0px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.rede:hover {
+    box-sizing: border-box;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+}

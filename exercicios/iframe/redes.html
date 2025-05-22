@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pacote-d013/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <main>
+        <div id="celular">
+            <div id="redes" class="redes">
+                <a class="link" href="insta.html" target="tela" rel="next"><img class="rede" src="pacote-d013/imagens/logo-instagram.jpg" alt=""></a>
+                <a class="link" href="youtube.html" target="tela" rel="next"><img class="rede" src="pacote-d013/imagens/logo-youtube.jpg" alt=""></a>
+                <a class="link" href="github.html" target="tela" rel="next"><img class="rede" src="pacote-d013/imagens/logo-github.jpg" alt=""></a>
+                <a class="link" href="facebook.html" target="tela" rel="next"><img class="rede" src="pacote-d013/imagens/logo-facebook.jpg" alt=""></a>
+                <a class="link" href="twitter.html" target="tela" rel="next"><img class="rede" src="pacote-d013/imagens/logo-twitter.jpg" alt=""></a>
+            </div>
+            <a class="linkhome" href="home.html" target="tela" rel="prev"><img class="homecelular" src="pacote-d013/imagens/logo-home.jpg" alt=""></button></a>
+            <img src="pacote-d013/imagens/frame-iphone.png" alt="">
+            <iframe id="conteudo" src="home.html" name="tela" frameborder="0"></iframe>
+        </div>
+    </main>
+    
+    <script>
+        const links = document.querySelectorAll('.link');
+        const redes = document.getElementById('redes');
+        const botaoHome = document.querySelector('.linkhome');
+        const iframe = document.getElementById('conteudo');
+
+        // Esconde os ícones quando clicam numa rede
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                redes.style.display = 'none';
+            });
+        });
+
+        // Mostra os ícones ao clicar no botão "Home"
+        botaoHome.addEventListener('click', () => {
+            redes.style.display = 'flex';
+        });
+
+        // Verifica se a página dentro do iframe é a "home"
+        iframe.addEventListener('load', () => {
+            const paginaAtual = iframe.contentWindow.location.href;
+
+            if (paginaAtual.includes('home.html')) {
+                redes.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>

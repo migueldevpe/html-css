@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.zebrado > tr:nth-child(2n+1) {
+    background-color: rgb(240, 240, 240);
+}
+
+th {
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.total {
+    text-align: center;
+}
+
+.totalfinal {
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
