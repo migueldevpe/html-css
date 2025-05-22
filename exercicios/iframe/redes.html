@@ -12,6 +12,9 @@
 <body>
     <main>
         <div id="celular">
+            <div class="onoff">
+                <button id="toggleBtn"></button>
+            </div>
             <div id="redes" class="redes">
                 <a class="link" href="insta.html" target="tela" rel="next"><img class="rede" src="pacote-d013/imagens/logo-instagram.jpg" alt=""></a>
                 <a class="link" href="youtube.html" target="tela" rel="next"><img class="rede" src="pacote-d013/imagens/logo-youtube.jpg" alt=""></a>
@@ -24,33 +27,43 @@
             <iframe id="conteudo" src="home.html" name="tela" frameborder="0"></iframe>
         </div>
     </main>
-    
+
     <script>
-        const links = document.querySelectorAll('.link');
-        const redes = document.getElementById('redes');
-        const botaoHome = document.querySelector('.linkhome');
+        const toggleBtn = document.getElementById('toggleBtn');
         const iframe = document.getElementById('conteudo');
+        const redes = document.getElementById('redes');
+        const links = document.querySelectorAll('.link');
 
-        // Esconde os ícones quando clicam numa rede
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                redes.style.display = 'none';
-            });
-        });
+        let telaLigada = true;
 
-        // Mostra os ícones ao clicar no botão "Home"
-        botaoHome.addEventListener('click', () => {
+        toggleBtn.addEventListener('click', () => {
+        if (telaLigada) {
+            iframe.src = 'black.html';
+            redes.style.display = 'none';
+            telaLigada = false;
+        } else {
+            iframe.src = 'home.html';
             redes.style.display = 'flex';
+            telaLigada = true;
+        }
         });
 
-        // Verifica se a página dentro do iframe é a "home"
-        iframe.addEventListener('load', () => {
-            const paginaAtual = iframe.contentWindow.location.href;
+        links.forEach(link => {
+        link.addEventListener('click', () => {
+            redes.style.display = 'none';
+        });
+        });
 
-            if (paginaAtual.includes('home.html')) {
-                redes.style.display = 'flex';
+        iframe.addEventListener('load', () => {
+        try {
+            const urlAtual = iframe.contentWindow.location.href;
+            if (urlAtual.includes('home.html') && telaLigada) {
+            redes.style.display = 'flex';
             }
+        } catch (e) {
+        }
         });
     </script>
+
 </body>
 </html>
