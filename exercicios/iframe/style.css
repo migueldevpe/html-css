@@ -99,13 +99,10 @@ main {
     height: auto;
     width: 50px;
     border-radius: 25%;
-    box-sizing: border-box;
-    border: 0px solid transparent;
     transition: all 0.3s ease-in-out;
 }
 
 .rede:hover {
-    box-sizing: border-box;
-    border: 2px solid white;
+    filter: brightness(85%);
     transition: all 0.3s ease-in-out;
 }
