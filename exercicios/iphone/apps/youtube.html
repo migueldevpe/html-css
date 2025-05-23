@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insta</title>
@@ -26,6 +27,17 @@
         img {
             height: auto;
             width: 100vw;
+        }
+
+        .topsize {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(15, 15, 15, 0.95); 
+            height: 10.85%;
+            width: 100%;
+            z-index: 999;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
         }
 
         .linkhome {
@@ -135,7 +147,9 @@
 </head>
 <body>
 
-    <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
+    <div class="topsize">
+        <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
+    </div>    
 
     <img id="top" src="../images/tela-youtube.jpg" alt="">
     <a class="youtube" href="https://www.youtube.com/@RockstarGames" target="_blank" rel="next"></a>

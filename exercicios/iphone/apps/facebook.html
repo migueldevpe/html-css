@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insta</title>
@@ -26,6 +27,17 @@
         img {
             height: auto;
             width: 100vw;
+        }
+
+        .topsize {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(38, 39, 41, 0.95);
+            height: 10.85%;
+            width: 100%;
+            z-index: 999;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
         }
 
         .linkhome {
@@ -98,7 +110,7 @@
         }
 
         .publications > .publi {
-            background-image: radial-gradient(transparent 50%, rgba(255, 255, 255, 0.25));
+            background-image: radial-gradient(transparent 50%, rgba(255, 255, 255, 0.2));
             background-size: cover;
             height: 20%;
             width: 100%;
@@ -136,8 +148,10 @@
 </head>
 <body>
 
-    <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
-
+    <div class="topsize">
+        <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
+    </div>
+    
     <a class="face" href="https://www.facebook.com/share/1UakHYcDei/" target="_blank" rel="next"></a>
 
     <img src="../images/tela-face.jpg" alt="">
