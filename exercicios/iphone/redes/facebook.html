@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta</title>
+
+    <style>  
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            height: 0;
+            width: 0;
+        } 
+
+        body {
+            position: relative;
+            background-color: black;
+        }
+
+        img {
+            height: auto;
+            width: 100vw;
+        }
+
+        .linkhome {
+            opacity: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            border-radius: 50%;
+            position: absolute;
+            top: 46px;
+            left: 4px;
+            width: 25px;
+            height: 25px;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .linkhome:hover {
+            opacity: 25%;
+            filter: brightness(100000);
+        }
+
+        .face {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            background-image: radial-gradient( rgba(255, 255, 255, 1) 100%, transparent);
+            opacity: 0%;
+            height: 107px;
+            width: 107px;
+            border-radius: 50%;
+            top: 169px;
+            left: 8px;
+            z-index: 20;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .face:hover {
+            opacity: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .publications {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            top: 355px;
+            background-color: transparent;
+            height: 2190px;
+            width: 315px;
+        }
+
+        .publications > .publi {
+            background-image: radial-gradient(transparent 5%, rgba(255, 255, 255, 0.25));
+            background-size: cover;
+            height: 435px;
+            width: 315px;
+            margin-bottom: 3px;
+            opacity: 0%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .publi:hover {
+            opacity: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>    
+
+</head>
+<body>
+
+    <a class="linkhome" href="../home.html" target="tela" rel="prev"><img class="homecelular" src="../images/logo-home.jpg" alt=""></button></a>
+
+    <a class="face" href="https://www.facebook.com/share/1UakHYcDei/" target="_blank" rel="next"></a>
+
+    <img src="../images/tela-face1.jpg" alt="">
+
+    <div class="publications">
+        <a class="publi" href="https://www.facebook.com/share/p/196D2u6GYc/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.facebook.com/share/p/19Mk1Vx5b5/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.facebook.com/share/p/1HaQ415NB4/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.facebook.com/share/p/15bvDSkTAX/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.facebook.com/share/p/1APTsyJBjj/" target="_blank" rel="external">
+           
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta</title>
+
+    <style>  
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            height: 0;
+            width: 0;
+        } 
+
+        body {
+            position: relative;
+            background-color: black;
+        }
+
+        img {
+            height: auto;
+            width: 100vw;
+        }
+
+        .linkhome {
+            opacity: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 25px;
+            height: 25px;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .linkhome:hover {
+            opacity: 25%;
+            filter: brightness(100000);
+        }
+
+        .insta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            background-color: transparent;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            top: 37.5px;
+            left: 12px;
+            z-index: 20;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .insta:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        p {
+            text-align: center;
+            font-size: 2.5rem;
+            color: rgba(255, 255, 255, 0);
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        p:hover {
+            transform: scale(1.025);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>    
+
+
+</head>
+<body>
+
+    <a class="linkhome" href="../home.html" target="tela" rel="prev"><img class="homecelular" src="../images/logo-home.jpg" alt=""></button></a>
+
+    <img src="../images/tela-instagram.jpg" alt="">
+    <a class="insta" href="https://www.instagram.com" target="_blank" rel="next"><p>ACESSE AQUI</p></a>
+
+</body>
+</html>
