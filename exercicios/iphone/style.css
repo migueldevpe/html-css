@@ -46,8 +46,8 @@
 
     body #conteudo {
         position: absolute;
-        width: 90%;
         height: 95%; 
+        width: 90%;
         border-radius: 12.5vw;
         left: 50%;
         transform: translateX(-50%);
@@ -128,7 +128,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         height: auto;
-        width: 90%;
+        width: 85%;
         top: 9%;
         left: 50%;
         transform: translateX(-50%);
