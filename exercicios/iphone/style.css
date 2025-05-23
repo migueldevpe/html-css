@@ -6,7 +6,7 @@
     user-select: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     body main {
         display: flex;
         align-items: center;
@@ -64,7 +64,7 @@
         width: 2%;
     }
 
-    body button {
+    body > #toggleBtn {
         border: none;
         position: absolute;
         background-color: transparent;
@@ -74,10 +74,80 @@
         transition: all 0.3s ease-in-out;
     }
 
-    body button:hover {
+    body > #toggleBtn:hover {
         background-color: rgba(245, 245, 245, 0.5);
         transition: all 0.3s ease-in-out;
         filter: blur(5%);
+    }
+
+    body #imginsta {
+        background-image: url(images/logo-instagram-hover.jpg);
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #imginsta:hover {
+        filter: brightness(85%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imgyoutube {
+        background-image: url(images/logo-youtube-hover.jpg);
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imgyoutube:hover {
+        filter: brightness(85%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imggithub {
+        background-image: url(images/logo-github-hover.jpg);
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imggithub:hover {
+        filter: brightness(85%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imgface {
+        background-image: url(images/logo-facebook-hover.jpg);
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imgface:hover {
+        filter: brightness(85%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imgx {
+        background-image: url(images/logo-x-hover.jpg);
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body #imgx:hover {
+        filter: brightness(85%);
+        transition: all 0.3s ease-in-out;
     }
 
     body .linkhome {
@@ -145,7 +215,7 @@
     }
 
     body .rede:hover {
-        filter: brightness(85%);
+        filter: none;
         transition: all 0.3s ease-in-out;
     }
 }
@@ -209,7 +279,7 @@ main {
     width: 5px;
 }
 
-button {
+#toggleBtn {
     border: none;
     position: absolute;
     background-color: transparent;
@@ -219,7 +289,7 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+#toggleBtn:hover {
     background-color: rgba(245, 245, 245, 0.5);
     transition: all 0.3s ease-in-out;
     filter: blur(1px);
@@ -239,9 +309,84 @@ button:hover {
     transition: all 0.3s ease-in-out;
 }
 
+button {
+    border: none;
+}
+
+
 #imginsta {
-    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/14414683-logotipo-preto-do-instagram-em-fundo-transparente-gratis-vetor.jpg);
+    background-image: url(images/logo-instagram.jpg);
     background-size: cover;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#imginsta:hover {
+    background-image: url(images/logo-instagram-hover.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+}
+
+#imgyoutube {
+    background-image: url(images/logo-youtube.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#imgyoutube:hover {
+    background-image: url(images/logo-youtube-hover.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+}
+
+#imggithub {
+    background-image: url(images/logo-github.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#imggithub:hover {
+    background-image: url(images/logo-github-hover.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+}
+
+#imgface {
+    background-image: url(images/logo-facebook.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#imgface:hover {
+    background-image: url(images/logo-facebook-hover.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+}
+
+#imgx {
+    background-image: url(images/logo-x.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#imgx:hover {
+    background-image: url(images/logo-x-hover.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
 }
 
 .homecelular {
@@ -292,6 +437,6 @@ button:hover {
 }
 
 .rede:hover {
-    filter: brightness(85%);
+    filter: none;
     transition: all 0.3s ease-in-out;
 }
