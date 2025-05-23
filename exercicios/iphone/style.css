@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     user-select: none;
+    overflow-y: hidden;
 }
 
 @media (max-width: 425px) {
@@ -17,7 +18,6 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        overflow-y: hidden;
     }
 
     body .frontcam {
@@ -37,7 +37,7 @@
         background-image: url(images/iframe-iphone[1].png);
         background-position: center;
         background-size: cover;
-        position: relative;
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
