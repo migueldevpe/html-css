@@ -30,10 +30,13 @@
         }
 
         .topsize {
+            background-image: url(../images/@-instagram.png);
+            background-position: center center;
+            background-size: cover;
             position: fixed;
             top: 0;
             left: 0;
-            background-color: rgba(38, 39, 41, 0.95);
+            background-color: rgba(9, 10, 14, 0.95);
             height: 10.85%;
             width: 100%;
             z-index: 999;
@@ -80,23 +83,52 @@
             align-items: center;
             justify-content: center;
             position: absolute;
-            background-color: transparent;
-            height: 60px;
-            width: 60px;
+            background-image: radial-gradient( rgba(255, 255, 255, 1) 50%, transparent);
+            opacity: 0%;
+            height: 6.5%;
+            width: 16.5%;
             border-radius: 50%;
-            top: 37.5px;
-            left: 12px;
+            top: 10.1%;
+            left: 5.25%;
             z-index: 20;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
         }
 
         .insta:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: transparent;
+            opacity: 50%;
             transition: all 0.3s ease-in-out;
         }
 
-                .backtotop {
+        .publications {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            flex-direction: column;
+            flex-wrap: wrap;
+            top: 21.75%;
+            background-color: transparent;
+            height: 78%;
+            width: 100%;
+        }
+
+        .publications > .publi {
+            background-image: radial-gradient(transparent 50%, rgba(255, 255, 255, 0.5));
+            height: 16.5%;
+            width: 33%;
+            opacity: 0%;
+            margin-bottom: 0.3%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .publi:hover {
+            background-color: transparent;
+            opacity: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .backtotop {
             background-image: url(../images/top.png);
             background-position: center center;
             background-repeat: no-repeat;
@@ -116,15 +148,72 @@
             transform: scale(1.05);
             transition: all 0.3s ease-in-out;
         }     
+
     </style>    
 
 </head>
 <body>
 
-    <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
+    <div class="topsize">
+        <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
+    </div>    
 
     <img src="../images/tela-instagram.jpg" alt="">
-    <a class="insta" href="https://www.instagram.com" target="_blank" rel="next"></a>
+    <a class="insta" href="https://www.instagram.com/rockstargames/" target="_blank" rel="next"></a>
+
+    <div class="publications">
+        <a class="publi" href="https://www.instagram.com/reel/DJUD2N-gRNa/?igsh=MW5hMnB3dGlwbWppYw==" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/DJ4MDt8zYID/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/reel/DIeOpFGgHo8/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/p/DBuFmeWyPJP/?igsh=MXE2dmxuZzg4eTVwaA==" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/C-5pss9zfL1/" target="_blank" rel="external">
+           
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/C0eVKatgWj0/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/reel/DGyWqtePV7X/?igsh=MWhodTdlZmZsMjZ1dA==" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/DJ1nRFXgA-G/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/DHG8rO_PF1c/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/reel/DBtmljsOY5n/" target="_blank" rel="external">
+           
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/C5V85IsgMjU/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/C0UB-rWg4bm/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/DJ9cSpERvz6/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/DJHX0e4MYNr/" target="_blank" rel="external">
+            
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/p/DG3f51hPKV_/" target="_blank" rel="external">
+           
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/reel/DBtkRnQuuSD/" target="_blank" rel="external">
+           
+        </a>
+        <a class="publi" href="https://www.instagram.com/rockstargames/reel/C04E-VBA-PL/" target="_blank" rel="external">
+           
+        </a>
+    </div>
 
     <a class="backtotop" href="#"></a>
 
