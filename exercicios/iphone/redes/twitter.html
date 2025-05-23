@@ -9,6 +9,7 @@
         * {
             margin: 0px;
             padding: 0px;
+            scroll-behavior: smooth;
             overflow-x: hidden;
         }
 
@@ -28,24 +29,38 @@
         }
 
         .linkhome {
-            opacity: 0%;
+            background-color: rgba(128, 128, 128, 0);
+            opacity: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             position: absolute;
             border-radius: 50%;
-            position: absolute;
-            top: 35px;
-            left: 12px;
-            width: 25px;
-            height: 25px;
+            position: fixed;
+            top: 6.75%;
+            left: 3%;
+            height: 3.75%;
+            width: 8%;
             border: none;
             transition: all 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        .homecelular {
+            background-image: url(../images/back.png);
+            background-color: transparent;
+            background-position: center;
+            background-size: 90%;
+            height: 100%;
+            width: 100%;
+            border: none;
+            cursor: pointer;
         }
 
         .linkhome:hover {
-            opacity: 25%;
-            filter: brightness(100000);
+            background-color: rgba(128, 128, 128, 0.75);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
         }
 
         .twitter {
@@ -69,27 +84,37 @@
             transition: all 0.3s ease-in-out;
         }
 
-        p {
-            text-align: center;
-            font-size: 2.5rem;
-            color: rgba(255, 255, 255, 0);
-            padding: 10px;
+        .backtotop {
+            background-image: url(../images/top.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            background-color: rgba(128, 128, 128, 0.4); 
+            position: fixed;
+            right: 3%;
+            bottom: 3%;
+            height: 4.5%;
+            width: 9.75%;
+            border-radius: 50%;
             transition: all 0.3s ease-in-out;
         }
 
-        p:hover {
-            transform: scale(1.025);
+        .backtotop:hover {
+            background-color: rgba(128, 128, 128, 0.8);
+            transform: scale(1.05);
             transition: all 0.3s ease-in-out;
-        }
+        }        
     </style>
     
 </head>
 <body>
 
-    <a class="linkhome" href="../home.html" target="tela" rel="prev"><img class="homecelular" src="../images/logo-home.jpg" alt=""></button></a>
+    <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
 
     <img src="../images/tela-twitter.jpg" alt="">
-    <a class="twitter" href="https://www.x.com" target="_blank" rel="next"><p>ACESSE AQUI</p></a>
+    <a class="twitter" href="https://www.x.com" target="_blank" rel="next"></a>
+
+    <a class="backtotop" href="#"></a>
 
 </body>
 </html>

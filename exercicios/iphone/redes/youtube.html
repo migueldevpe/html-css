@@ -9,6 +9,7 @@
         * {
             margin: 0px;
             padding: 0px;
+            scroll-behavior: smooth;
             overflow-x: hidden;
         }
 
@@ -28,24 +29,37 @@
         }
 
         .linkhome {
-            opacity: 0%;
+            background-color: rgba(128, 128, 128, 0);
+            opacity: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             position: absolute;
             border-radius: 50%;
-            position: absolute;
-            top: 44px;
-            left: 6.5px;
-            width: 25px;
-            height: 25px;
+            position: fixed;
+            top: 6.75%;
+            left: 3%;
+            height: 3.75%;
+            width: 8%;
             border: none;
             transition: all 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        .homecelular {
+            background-image: url(../images/back.png);
+            background-color: transparent;
+            background-position: center;
+            background-size: 90%;
+            height: 100%;
+            width: 100%;
+            border: none;
         }
 
         .linkhome:hover {
-            opacity: 25%;
-            filter: brightness(100000);
+            background-color: rgba(128, 128, 128, 0.75);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
         }
 
         .youtube {
@@ -55,11 +69,11 @@
             position: absolute;
             background-image: radial-gradient( rgba(255, 255, 255, 1) 50%, transparent);
             opacity: 0%;
-            height: 52px;
-            width: 52px;
+            height: 3.75%;
+            width: 16.25%;
             border-radius: 50%;
-            top: 160px;
-            left: 10px;
+            top: 11.25%;
+            left: 3.5%;
             z-index: 20;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
@@ -76,17 +90,17 @@
             align-items: center;
             flex-direction: column;
             flex-wrap: wrap;
-            top: 255px;
+            top: 17.8%;
             background-color: transparent;
-            height: 1170px;
-            width: 310px;
+            height: 82%;
+            width: 100%;
         }
 
         .publications > .publi {
             background-image: radial-gradient(transparent 5%, rgba(255, 255, 255, 0.75));
-            height: 72.5px;
+            height: 6.225%;
             border-radius: 10px;
-            width: 310px;
+            width: 100%;
             opacity: 0%;
             transition: all 0.3s ease-in-out;
         }
@@ -95,14 +109,35 @@
             opacity: 25%;
             transition: all 0.3s ease-in-out;
         }
+
+        .backtotop {
+            background-image: url(../images/top.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            background-color: rgba(128, 128, 128, 0.4); 
+            position: fixed;
+            right: 3%;
+            bottom: 3%;
+            height: 4.5%;
+            width: 9.75%;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .backtotop:hover {
+            background-color: rgba(128, 128, 128, 0.8);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
     </style>
 
 </head>
 <body>
 
-    <a class="linkhome" href="../home.html" target="tela" rel="prev"><img class="homecelular" src="../images/logo-home.jpg" alt=""></button></a>
+    <a class="linkhome" href="../home.html" target="tela" rel="prev"><button class="homecelular"></button></a>
 
-    <img src="../images/tela-youtube1.jpg" alt="">
+    <img id="top" src="../images/tela-youtube.jpg" alt="">
     <a class="youtube" href="https://www.youtube.com/@RockstarGames" target="_blank" rel="next"></a>
 
     <div class="publications">
@@ -154,6 +189,9 @@
          <a class="publi" href="https://youtu.be/ewAODca-3Bw?si=b6j0cef6kG30qEJ9" target="_blank" rel="external">
            
         </a>
+
+        <a class="backtotop" href="#"></a>
+
     </div>
 
 </body>

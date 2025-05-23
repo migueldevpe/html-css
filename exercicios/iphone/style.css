@@ -4,7 +4,150 @@
     padding: 0px;
     margin: 0px;
     user-select: none;
-    overflow-x: hidden;
+}
+
+@media (max-width: 375px) {
+    body main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(45deg, rgba(255, 255, 0, 0.2), rgb(200, 140, 150), rgba(0, 0, 255, 0.2));
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        overflow-y: hidden;
+    }
+
+    body .frontcam {
+        position: absolute;
+        top: 3.5%;
+        background-image: url(images/iframe-iphone-front.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 4.35%;
+        width: 29.5%;
+        z-index: 99999999;
+    }
+
+
+    body #celular {
+        background-image: url(images/iframe-iphone[1].png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.95);
+    }
+
+    body #conteudo {
+        position: absolute;
+        width: 90%;
+        height: 95%; 
+        border-radius: 12.5vw;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    body .onoff {
+        position: absolute;
+        top: 31.5%;
+        right: -1%;
+        background-color: transparent;
+        height: 12%;
+        width: 2%;
+    }
+
+    body button {
+        border: none;
+        position: absolute;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        border-radius: 25%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body button:hover {
+        background-color: rgba(245, 245, 245, 0.5);
+        transition: all 0.3s ease-in-out;
+        filter: blur(5%);
+    }
+
+    body .linkhome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 15%;
+        height: 10%;
+        width: 20%;
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .homecelular {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        opacity: 0%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        z-index: 9999999;
+    }
+
+    body .homecelular:hover {
+        opacity: 25%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
+        width: 21%;
+        margin: 2%;
+        margin-bottom: 3%;
+    }
+
+    body .redes {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        width: 90%;
+        top: 9%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99999;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .rede {
+        height: auto;
+        width: 100%;
+        border-radius: 25%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .rede:hover {
+        filter: brightness(85%);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 body {
@@ -44,6 +187,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(1.1);
 }
 
 #conteudo {
@@ -59,10 +203,10 @@ main {
 .onoff {
     position: absolute;
     top: 227.5px;
-    right: 1px;
+    right: 0px;
     background-color: transparent;
     height: 80px;
-    width: 3.5px;
+    width: 5px;
 }
 
 button {
@@ -70,7 +214,7 @@ button {
     position: absolute;
     background-color: transparent;
     height: 80px;
-    width: 3.5px;
+    width: 100%;
     border-radius: 25%;
     transition: all 0.3s ease-in-out;
 }
@@ -93,6 +237,11 @@ button:hover {
     height: 60px;
     border: none;
     transition: all 0.3s ease-in-out;
+}
+
+#imginsta {
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/14414683-logotipo-preto-do-instagram-em-fundo-transparente-gratis-vetor.jpg);
+    background-size: cover;
 }
 
 .homecelular {
