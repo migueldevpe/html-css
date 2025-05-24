@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
-            background-image: url(logo-instagram.jpg);
-            background-size: cover;
-            height: 60px;
-            width: 60px;
-            transition: all 0.3s ease-in-out;
-            border-radius: 50%;
-        }
-
-        div:hover {
-            background-image: url(https://i.pinimg.com/originals/39/4a/7a/394a7aaecd6b8ce44528649681d9fa05.jpg);
-            background-size: cover;
-            height: 60px;
-            width: 60px;
-            transition: all 0.3s ease-in-out;
+        #secondname {
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding: 4px;
         }
     </style>
+
 </head>
 <body>
-    <div></div>
+    <form action="index.html">
+        <p>Nome: <input type="text" name="name" id="name" placeholder="Escreva o seu nome."></p>
+        <p>Sobrenome: <input type="text" name="secondname" id="secondname" placeholder="Escreva o seu sobrenome."></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
 </body>
 </html>
