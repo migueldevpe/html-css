@@ -248,9 +248,6 @@
         transition: all 0.3s ease-in-out;
     }
 
-        
-    
-
     /* SEGUNDA PARTE DO CONTENT-P-IMAGES */
 
     body .content .content-p-images-2 {
@@ -261,17 +258,69 @@
 
     body .content .content-p-images-2 .p-images-2 {
         color: white;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-family: var(--normalfont);
-        width: 50%;
+        width: 45%;
         position: absolute;
-        padding: 0px 4.5% 0px 0px;
+        padding: 0px 2% 0px 0px;
         right: 0%;
-        top: 22.5%;
+        top: 22%;
         bottom: 67.5%;
         text-align: justify;
         text-indent: 0vw;
         user-select: text;
+    }
+
+    body .content-p-images-2 .image-1-2 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        height: auto;
+        width: 50%;
+        top: 10%;
+        left: 20.75%;
+        transform: translateX(-50%);
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    body .image-1-2 img {
+        border-radius: 15px 0px 0px 0px; 
+        object-fit: cover;
+        object-position: top center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor);  
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-p-images-2 .image-2-2 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        height: 45%;
+        width: 57.75%;
+        top: 45%;
+        left: 75.5%;
+        right: 1%;
+        transform: translateX(-50%);
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .image-2-2 img {
+        border-radius: 0px 0px 15px 0px; 
+        object-fit: cover;
+        object-position: 65% center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor);
+        transition: all 0.3s ease-in-out;
     }
 
     body .content-video {
@@ -697,7 +746,7 @@
         position: absolute;
         padding: 0px;
         transform: translateX(-50%);
-        top: 9%;
+        top: 9.25%;
         left: 50%;
         text-align: justify;
         text-indent: 0vw;
