@@ -58,10 +58,10 @@
 
     body .content .content-p-images .p-images {
         color: white;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         width: 50%;
         padding: 0px 0px 0px 4.5%;
-        top: 22.5%;
+        top: 20%;
         bottom: 67.5%;
         left: 0%;
         text-align: justify;
@@ -158,7 +158,189 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 950px) {
+    body .content-base > .content {
+        height: auto;
+        width: 90%;
+    }
+
+    body .content-base .content .content-h1 {
+        font-size: clamp(2.25rem, 25%, 3rem);
+    }
+
+    body .content-base .content-p {
+        font-size: clamp(1.25rem, 1rem, 1.5rem);
+    }
+
+    /* PRIMEIRA PARTE DO CONTENT-P-IMAGES */
+
+    body .content-base-2 > .content {
+        height: auto;
+        width: 90%;
+    }
+
+
+    body .content .content-p-images {
+        position: relative;
+        min-height: 810px;
+    }
+
+    body .content .content-p-images .p-images {
+        color: white;
+        font-size: 0.8rem;
+        width: 45%;
+        padding: 0px 0px 0px 2%;
+        top: 17.75%;
+        bottom: 67.5%;
+        left: 0%;
+        text-align: justify;
+        text-indent: 0vw;
+        user-select: text;
+    }
+
+    body .content-base .content .content-p-images .image-1 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        width: 50%;
+        height: auto;
+        top: 10%;
+        bottom: 10%;
+        right: 1%;
+        left: 54.25%;
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-base .content .content-p-images .image-1 img {
+        object-fit: cover;
+        object-position: 60% center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor); 
+        border-radius: 15px 15px 15px 0px; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-base .content .content-p-images .image-2 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        height: 45%;
+        width: 57.75%;
+        top: 45%;
+        left: -4.25%;
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-base .content .content-p-images .image-2 img {
+        object-fit: cover;
+        object-position: 65% center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor);
+        border-radius: 15px 0px 0px 15px; 
+        transition: all 0.3s ease-in-out;
+    }
+
+        
+    
+
+    /* SEGUNDA PARTE DO CONTENT-P-IMAGES */
+
+    body .content .content-p-images-2 {
+        position: relative;
+        min-height: 810px;
+        width: auto;
+    }
+
+    body .content .content-p-images-2 .p-images-2 {
+        color: white;
+        font-size: 0.9rem;
+        font-family: var(--normalfont);
+        width: 50%;
+        position: absolute;
+        padding: 0px 4.5% 0px 0px;
+        right: 0%;
+        top: 22.5%;
+        bottom: 67.5%;
+        text-align: justify;
+        text-indent: 0vw;
+        user-select: text;
+    }
+
+    body .content-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 780px;
+        width: 90%;
+        margin: auto;
+    }
+
+    body .content-video .content-local-video {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 1130px;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    body .content-local-video video{
+        vertical-align: middle;
+        aspect-ratio: auto 16/9;
+        filter: brightness(90%);
+        box-sizing: border-box;
+        border: 1.75vw solid white;
+        height: 100%;
+        width: 100%;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-local-video:hover {
+        filter: brightness(100%);
+        box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+        transform: rotate(0.5deg) scale(1.01);
+        transition: all 0.3s ease-in-out;
+
+        .explore {
+            background-color: var(--hovercolor);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+    }
+
+    body .content-local-video .explore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 10%;
+        background-color: rgb(240, 240, 240);
+        border-radius: 50px;
+        height: 10%;
+        width: 25%;
+        font-family: var(--bigfont);
+        font-size: clamp(.1rem, 1.75vw, 1.5rem);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 700px) {
     body .content .content-h1 {
         color: white;
         font-size: 3rem;
@@ -183,6 +365,247 @@
     body .content-base .content .content-p-images .p-images {
         color: white;
         font-size: 0.8rem;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        padding: 0px;
+        transform: translateX(-50%);
+        top: 9%;
+        left: 50%;
+        text-align: justify;
+        text-indent: 0vw;
+        user-select: text;
+    }
+
+    body .content-base .content .content-p-images .image-1 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        height: 240px;
+        width: 285px;
+        top: 31%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    body .content-base .content .content-p-images .image-1 img {
+        object-fit: cover;
+        object-position: 60% center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor); 
+        border-radius: 15px 0px 0px 0px; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-base .content .content-p-images .image-2 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        height: 240px;
+        width: 285px;
+        top: 61.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-base .content .content-p-images .image-2 img {
+        object-fit: cover;
+        object-position: 65% center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor);
+        border-radius: 0px 0px 15px 0px; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .secondary-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, transparent 90%, rgb(115, 140, 175)), url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/159000/159403-Recife-And-Vicinity.jpg);
+        background-position: 24% center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0px 15px 15px rgba(0, 0, 0, 0.2);
+        height: 100dvh;
+        width: 100%;
+    }
+
+/* SEGUNDA PARTE DO CONTENT-P-IMAGES */
+
+    body .content .content-p-images-2 {
+        position: relative;
+        min-height: 810px;
+    }
+
+    body .content-base-2 .content .content-p-images-2 .p-images-2 {
+        color: white;
+        font-size: 0.8rem;
+        height: auto;
+        width: 100%;
+        position: absolute;
+        padding: 0px;
+        transform: translateX(-50%);
+        top: 9%;
+        left: 50%;
+        text-align: justify;
+        text-indent: 0vw;
+        user-select: text;
+    }
+
+    body .content-p-images-2 .image-1-2 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        height: 240px;
+        width: 285px;
+        top: 31%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    body .image-1-2 img {
+        border-radius: 15px 0px 0px 0px; 
+        object-fit: cover;
+        object-position: top center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor);  
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-p-images-2 .image-2-2 {
+        background-color: transparent;
+        position: absolute;
+        border: none;
+        height: 240px;
+        width: 285px;
+        top: 61.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: zoom-in;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .image-2-2 img {
+        border-radius: 0px 0px 15px 0px; 
+        object-fit: cover;
+        object-position: 65% center;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%; /* max(15vw, 30vw); */
+        box-sizing: border-box;
+        border: 0px solid var(--hovercolor);
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 250px;
+        width: 100%;
+        margin: auto;
+    }
+
+    body .content-video > .content-local-video {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        margin: 0px 2.5%;
+        margin-bottom: 17.5%;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    body .content-local-video > video{
+        vertical-align: middle;
+        aspect-ratio: auto 16/9;
+        filter: brightness(90%);
+        box-sizing: border-box;
+        border: 1.75vw solid white;
+        height: 100%;
+        width: 100%;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .content-local-video:hover {
+        filter: brightness(100%);
+        box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+        transform: rotate(0.5deg) scale(1.01);
+        transition: all 0.3s ease-in-out;
+
+        .explore {
+            background-color: var(--hovercolor);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+    }
+
+    body .content-local-video > .explore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 10%;
+        background-color: rgb(240, 240, 240);
+        border-radius: 50px;
+        height: 10%;
+        width: 25%;
+        font-family: var(--bigfont);
+        font-size: clamp(.1rem, 2vw, 1.5rem);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 425px) {
+    body .content .content-h1 {
+        color: white;
+        font-size: 3rem;
+        font-family: var(--bigfont);
+        padding: 0px 0px 5% 0px;
+        user-select: text;
+    }
+
+    body .content .content-p {
+        color: white;
+        font-size: 1rem;
+        font-family: var(--normalfont);
+        text-align: justify;
+        user-select: text;
+    }
+
+    body .content .content-p-images {
+        position: relative;
+        min-height: 810px;
+    }
+
+    body .content-base .content .content-p-images .p-images {
+        color: white;
+        font-size: 0.7rem;
         height: auto;
         width: 100%;
         position: absolute;
@@ -652,12 +1075,12 @@ main.content-base {
 
 .content-p-images .p-images {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: var(--normalfont);
     width: 50%;
     position: absolute;
     padding: 0px 0px 0px 4.5%;
-    top: 20%;
+    top: 19.25%;
     bottom: 65%;
     left: 0%;
     text-align: justify;
