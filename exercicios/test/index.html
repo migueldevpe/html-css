@@ -14,10 +14,18 @@
 
 </head>
 <body>
-    <form action="index.html">
-        <p>Nome: <input type="text" name="name" id="name" placeholder="Escreva o seu nome."></p>
-        <p>Sobrenome: <input type="text" name="secondname" id="secondname" placeholder="Escreva o seu sobrenome."></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form autocomplete="on" action="index.html">
+        <p>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="Escreva o seu nome.">
+        </p>
+        <p>
+            <label for="secondname">Sobrenome:</label>
+            <input type="text" name="secondname" id="secondname" placeholder="Escreva o seu sobrenome.">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
     </form>
 </body>
 </html>
