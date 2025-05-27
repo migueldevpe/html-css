@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #secondname {
+        #password, #user{
             border-radius: 5px;
             border: 1px solid gray;
             padding: 4px;
@@ -16,14 +16,15 @@
 <body>
     <form autocomplete="on" action="index.html">
         <p>
-            <label for="name">Nome:</label>
-            <input type="text" name="name" id="name" placeholder="Escreva o seu nome.">
+            <label for="user">Nome:</label>
+            <input type="text" name="name" id="user" placeholder="Escreva o seu nome." required minlength="3">
         </p>
         <p>
-            <label for="secondname">Sobrenome:</label>
-            <input type="text" name="secondname" id="secondname" placeholder="Escreva o seu sobrenome.">
+            <label for="password">Senha:</label>
+            <input type="text" name="password" id="password" placeholder="Escreva a sua senha." required minlength="6" maxlength="12">
         </p>
         <p>
+            <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
         </p>
     </form>
