@@ -6,27 +6,42 @@
     <title>Document</title>
     <style>
         #password, #user{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 5px;
             border: 1px solid gray;
             padding: 4px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            width: 200px;
+            margin: auto;
         }
     </style>
 
 </head>
 <body>
-    <form autocomplete="on" action="index.html">
-        <p>
-            <label for="user">Nome:</label>
-            <input type="text" name="name" id="user" placeholder="Escreva o seu nome." required minlength="3">
-        </p>
-        <p>
-            <label for="password">Senha:</label>
-            <input type="text" name="password" id="password" placeholder="Escreva a sua senha." required minlength="6" maxlength="12">
-        </p>
-        <p>
-            <input type="reset" value="Limpar">
-            <input type="submit" value="Enviar">
-        </p>
-    </form>
+    <div>
+        <form autocomplete="on" action="index.html">
+            <p>
+                <label for="user">Nome:</label>
+                <input type="text" name="name" id="user" placeholder="Escreva o seu nome." required minlength="3">
+            </p>
+            <p>
+                <label for="password">Senha:</label>
+                <input type="text" name="password" id="password" placeholder="Escreva a sua senha." required minlength="6" maxlength="12">
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
 </body>
 </html>
