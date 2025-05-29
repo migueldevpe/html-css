@@ -54,6 +54,11 @@
                     <option>Analista</option>
                 </datalist>
             </p>
+            <p>	
+                <label for="carai">Carai</label>
+                <input type="range" name="ranger" id="icarai" min="0" max="10" value="0" oninput="showa.innerHTML = Number(icarai.value)">
+                <output id="showa">0</output>
+            </p> 
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">          
         </form>
