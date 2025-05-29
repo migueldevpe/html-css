@@ -11,7 +11,7 @@
 </head>
 <body>
     <fieldset style="width: 200px; margin: auto; border-radius: 10px;">
-        <legend>Dados cadastrados</legend>
+        <legend>Dados cadastrais</legend>
         <form action="" autocomplete="on">
             <p>
                 <label for="name">Nome</label>
@@ -36,14 +36,23 @@
                 <input type="radio" name="sexo" id="sexf" value="F">
             </p>
             <p>
-                <label for="recife">Recife</label>
-                <input type="checkbox" name="hellcife" id="recife">
-                <br>
-                <label for="olinda">Olinda</label>
-                <input type="checkbox" name="olinda" id="olinda">
-                <br>
-                <label for="jaboatao">Jaboatão dos Guararapes</label>
-                <input type="checkbox" name="jaboatao" id="jaboatao">
+                <label for="states">Selecione seu estado</label>
+                    <select name="estados" id="states">
+                        <colgroup id="">Nordeste</colgroup>
+                            <option value="" selected>Pernambuco</option>
+                            <option value="">Bahia</option>
+                            <option value="">Piauí</option>
+                            <option value="">Maranhão</option>
+                    </select>
+            </p>
+            <p>
+                <label for="prof">Profissão</label>
+                <input type="text" name="profissao" id="prof" list="listprof">
+                <datalist id="listprof">
+                    <option>Desenvolvedor</option>
+                    <option>Engenheiro</option>
+                    <option>Analista</option>
+                </datalist>
             </p>
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">          
