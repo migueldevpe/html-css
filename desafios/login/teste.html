@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="#">
+
+</head>
+<body>
+    <fieldset style="width: 200px; margin: auto; border-radius: 10px;">
+        <legend>Dados cadastrados</legend>
+        <form action="" autocomplete="on">
+            <p>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Seu nome." required minlength="3">
+            </p>
+            <p>
+                <label for="sname">Sobrenome</label>
+                <input type="text" name="sname" id="sname" placeholder="Seu sobrenome." required minlength="3">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Seu email." required minlength="10">
+            </p>
+            <p>
+                <label for="email">Telefone</label>
+                <input type="tel" name="tel" id="tel" placeholder="(XX) XXXX-XXX" required pattern="\([0-9]{2}\)\s[0-9]{8,9}">
+            </p>
+            <p>
+                <label for="sexh">Masculino</label>
+                <input type="radio" name="sexo" id="sexh">
+                <label for="sexf">Feminino</label>
+                <input type="radio" name="sexo" id="sexf">
+            </p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">          
+        </form>
+    </fieldset>
+</body>
+</html>
