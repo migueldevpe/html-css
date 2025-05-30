@@ -160,6 +160,7 @@ header > menu {
     display: block;
     align-items: center;
     height: 54px;
+    user-select: none;
 }
 
 header > menu > ul {
@@ -214,4 +215,8 @@ main article > p {
     text-indent: 10px;
     text-align: justify;
     padding: 0px 30px 20px 30px;
+}
+
+#printer {
+    display: none;
 }
