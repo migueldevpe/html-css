@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* TELA */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
