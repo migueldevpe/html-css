@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* print */
+
+@media print {
+    #phone, #tv, #tablet, #pc {
+        display: none;
+    }
+   
+    #print {
+        display: block;
+        margin: auto;
+    }
+
+    html body {
+        background-image: url(imagens/back-print.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+/* tv */
+
+@media screen and (min-width: 1200px) {
+    #phone, #print, #tablet, #pc {
+        display: none;
+    }
+   
+    #tv {
+        display: block;
+        margin: auto;
+    }
+
+    html body {
+        background-image: url(imagens/back-tv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+/* pc */
+
+@media screen and (min-width: 992px )and (max-width: 1200px) {
+    #phone, #print, #tablet, #tv {
+        display: none;
+    }
+   
+    #pc {
+        display: block;
+        margin: auto;
+    }
+
+    html body {
+        background-image: url(imagens/back-pc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #pc, #print, #phone, #tv {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+        margin: auto;
+    }
+
+    html body {
+        background-image: url(imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
+/* celular */
+
+@media screen and (min-width: 325px) and (max-width: 768px) {
+    #pc, #print, #tablet, #tv {
+        display: none;
+    }
+
+    #phone {
+        display: block;
+        margin: auto;
+    }
+
+    html body {
+        background-image: url(imagens/back-phone.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: url(imagens/cev-landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    background-color: rgba(240, 248, 255, 0.85);
+    width: 400px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20px;
+}
