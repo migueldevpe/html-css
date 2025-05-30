@@ -134,6 +134,12 @@
     }
 }
 
+@media (min-width: 721px) {
+    #itens {
+        display: block !important;
+    }
+}
+
 body {
     background-color: lightgray;
 }
@@ -153,7 +159,7 @@ header > menu {
     background-color: rgb(55, 55, 55);
     display: block;
     align-items: center;
-    height: 50px;
+    height: 54px;
 }
 
 header > menu > ul {
@@ -162,7 +168,7 @@ header > menu > ul {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    height: 50px;
+    height: 54px;
 }
 
 header > menu > ul > li {
@@ -174,7 +180,7 @@ header > menu > ul > li > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 54px;
     width: 85px;
     border-radius: 10px;
     margin-right: 2.5px;

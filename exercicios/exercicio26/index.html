@@ -43,30 +43,22 @@
         </article>
     </main>
     <script>
-        function clickMenu() {
+        function clickMenu(){
             const menu = document.getElementById('itens');
             const botao = document.getElementById('cmenu');
 
-            // Alterna visibilidade e animação no mobile
+            // alterna visibilidade do menu
             menu.classList.toggle('mostrar');
+
+            // alterna estilo do botão (vira X)
             botao.classList.toggle('ativo');
-        }
-
-        // Reset do menu ao redimensionar a tela
-        window.addEventListener('resize', function () {
-            const menu = document.getElementById('itens');
-            const botao = document.getElementById('cmenu');
-
-            if (window.innerWidth > 720) {
-                // Mostra o menu automaticamente no desktop
-                menu.classList.remove('mostrar');
-                menu.style.display = 'flex';
-                botao.classList.remove('ativo');
+            
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
             } else {
-                // Remove estilo inline do desktop
-                menu.style.display = '';
+                itens.style.display = 'block'
             }
-        });
+        }
     </script>
 </body>
 </html>
