@@ -11,10 +11,69 @@
         padding: 20px;
     }
 
+    body #cmenu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 52px;
+        border: 1px solid black;
+        background-color: rgb(100, 100, 100);
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    body #cmenu:hover {
+        background-color: rgb(120, 120, 120);
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    body .mtop {
+        height: 5px;
+        width: 20px;
+        margin-bottom: 3px;
+        background-color: aliceblue;
+        transition: all 0.3s ease-in-out;
+    }
+
+    body .mbottom {
+        height: 5px;
+        width: 20px;
+        background-color: aliceblue;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #cmenu.ativo .mtop {
+        position: absolute;
+        top: 45%;
+        height: 4px;
+        width: 15px;
+        margin: 0px;
+        background-color: aliceblue;
+        transform: rotate(45deg);;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #cmenu.ativo .mbottom {
+        position: absolute;
+        top: 45%;
+        height: 4px;
+        width: 15px;
+        background-color: aliceblue;
+        transform: rotate(-45deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
     body header > menu {
         background-color: transparent;
-        display: block;
+        display: none;
         height: 260px;
+        transition: display 0.3s ease-in-out;
+    }
+
+    #itens {
+        transition: display 0.3s ease-in-out;
     }
 
     body header > menu > ul {
@@ -92,7 +151,7 @@ header > h1 {
 
 header > menu {
     background-color: rgb(55, 55, 55);
-    display: flex;
+    display: block;
     align-items: center;
     height: 50px;
 }

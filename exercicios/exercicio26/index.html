@@ -12,8 +12,11 @@
 <body>
     <header>
         <h1>Lorem</h1>
-        <i>menu</i>
-        <menu>
+        <div id="cmenu" onclick="clickMenu()">
+            <div class="mtop"></div>
+            <div class="mbottom"></div>
+        </div>
+        <menu id="itens">
             <ul>
                 <li type="square"><a href="#">Lorem 1</a></li>
                 <li type="square"><a href="#">Lorem 2</a></li>
@@ -39,5 +42,31 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nihil quam odio quod laboriosam odit ex nisi, temporibus aliquam mollitia deserunt expedita quibusdam porro tempora maxime, quasi minus iste possimus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel officiis quisquam sed delectus ratione, deleniti, voluptatum quam, dicta cupiditate voluptates nulla officia iste. Eos ipsa aut dicta quasi id exercitationem.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            const menu = document.getElementById('itens');
+            const botao = document.getElementById('cmenu');
+
+            // Alterna visibilidade e animação no mobile
+            menu.classList.toggle('mostrar');
+            botao.classList.toggle('ativo');
+        }
+
+        // Reset do menu ao redimensionar a tela
+        window.addEventListener('resize', function () {
+            const menu = document.getElementById('itens');
+            const botao = document.getElementById('cmenu');
+
+            if (window.innerWidth > 720) {
+                // Mostra o menu automaticamente no desktop
+                menu.classList.remove('mostrar');
+                menu.style.display = 'flex';
+                botao.classList.remove('ativo');
+            } else {
+                // Remove estilo inline do desktop
+                menu.style.display = '';
+            }
+        });
+    </script>
 </body>
 </html>
