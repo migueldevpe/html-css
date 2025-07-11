@@ -8,6 +8,7 @@
 }
 
 @media (max-width: 425px) {
+
     body main {
         display: flex;
         align-items: center;
@@ -78,6 +79,7 @@
         background-color: rgba(245, 245, 245, 0.5);
         transition: all 0.3s ease-in-out;
         filter: blur(5%);
+        cursor: pointer;
     }
 
     body #imginsta {
@@ -311,6 +313,7 @@ main {
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 
